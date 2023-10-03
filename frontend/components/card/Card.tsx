@@ -27,7 +27,7 @@ const Card = ({name, date, label}: CardProps) => {
             <MdLabelOutline className='h-5 w-5'/>
             <span>{label}</span>
           </div>
-          <button className='w-30 h-5 flex justify-center items-center p-0 rounded-lg  bg-'>
+          <button className='w-30 h-5 flex justify-center items-center p-0 rounded-lg bg-[var(--gren-dark)] debug'>
             <span>Etiquetar</span>
           </button>
         </div>
