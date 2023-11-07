@@ -14,7 +14,7 @@ const Card = ({name, date, label}: CardProps) => {
     return(
       <div className='flex flex-col  w-44 h-[250px]'>
         <Image  src="/sign.png" width={176} height={100} alt="sign"/>
-        <div className='flex flex-col gap-2 p-2 bg-[#E3F8ED] '>
+        <div className='flex flex-col gap-2 p-2 bg-[#E3F8ED]'>
           <div className='flex '>
             <MdOutlinePermIdentity className='h-5 w-5'/>
             <span>{name}</span>
@@ -27,7 +27,7 @@ const Card = ({name, date, label}: CardProps) => {
             <MdLabelOutline className='h-5 w-5'/>
             <span>{label}</span>
           </div>
-          <button className='w-30 h-5 flex justify-center items-center p-0 rounded-lg bg-[var(--gren-dark)] debug'>
+          <button className='w-30 h-5 flex justify-center items-center p-0 rounded-lg bg-[var(--green-dark)]'>
             <span>Etiquetar</span>
           </button>
         </div>

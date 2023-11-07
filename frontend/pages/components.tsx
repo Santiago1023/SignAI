@@ -4,6 +4,10 @@ import Modal from "@/components/modal/Modal";
 import { useState } from "react";
 import TagPosition from "@/components/tag-position/TagPosition";
 
+
+
+// import DragDrop from "@/components/drag-drop/DragDrop";
+
 function Components() {
   const [showModal, setShowModal] = useState<boolean>(false);
 
@@ -17,6 +21,13 @@ function Components() {
       )}
       <ConfigProfile />
       <TagPosition />
+
+      <video width={1200} controls>
+        <source src="http://localhost:8000/sign_videos/video/video.mp4" type="video/mp4"/>
+      </video>
+      {/* <DragDrop/> */}
+
+      
     </main>
   );
 }

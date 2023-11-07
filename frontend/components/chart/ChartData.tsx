@@ -47,7 +47,7 @@ const ChartData = ({ charData }) => {
             },
           },
         }}
-        className='debug'
+        className=''
       />
     );
   };

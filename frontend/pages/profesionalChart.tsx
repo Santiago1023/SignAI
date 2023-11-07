@@ -31,9 +31,9 @@ const ProfesionalChart = () => {
         <Layout>
         {/* <div style={{width: 700}}> */}
             {/* <div className='debug flex flex-col w-full items-center gap-8 m-20'> */}
-            <div className='debug flex flex-col w-full gap-8 m-20'>
+            <div className='flex flex-col w-full gap-8 m-20'>
 
-              <div className='flex flex-col debug'>
+              <div className='flex flex-col'>
                 <span className='font-bold text-xl text-[var(--green-dark)]'>ANÁLISIS DE DATOS</span>
                 <div className='flex gap-4 items-center'>
                     <span className='font-bold text-3xl text-[var(--grey-dark)]'>{countData}</span>
@@ -41,7 +41,7 @@ const ProfesionalChart = () => {
                 </div>
               </div>
               
-                <div style={{width:600, height:300}} className='debug items-center'>
+                <div style={{width:600, height:300}} className=' items-center'>
                   <ChartData charData={userLabelData}/>
                 </div>
             </div>
