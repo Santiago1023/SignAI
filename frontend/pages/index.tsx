@@ -1,6 +1,7 @@
 import Link from "next/link";
 import style from "@/styles/index.module.css";
 import Contact from "@/components/contact/Contact";
+import Image from "next/image";
 
 const Index = () => {
   return (
@@ -22,11 +23,17 @@ const Index = () => {
       </section>
       <footer className={style.Footer}>
         <figure className={style.WrapperImage}>
-          <img
+          <Image
             className={style.Image}
             src="udea-logo-blanco.svg"
             alt="Logo de la Universidad de Antioquia"
           />
+          {
+          /* build ->  <img
+            className={style.Image}
+            src="udea-logo-blanco.svg"
+            alt="Logo de la Universidad de Antioquia"
+          /> */}
         </figure>
         <Contact />
       </footer>

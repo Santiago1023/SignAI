@@ -7,7 +7,21 @@ const tipografia = Jost({ subsets: ["latin"], weight: ["500", "600", "700"] });
 
 ChartJS.register(LinearScale);
 
-const ChartData = ({ charData }) => {
+interface userLabelData {
+  labels: string[];
+  datasets: {
+      axis: string;
+      label: string;
+      data: number[];
+      backgroundColor: string[];
+      borderRadius: number;
+      barPercentage: number;
+      borderSkipped: boolean;
+  }[];
+}
+
+const ChartData = ({ charData }: { charData: userLabelData }) => {
+// const ChartData = ({ charData }) => {
   const fontFamily = tipografia.style.fontFamily;
 
   return (

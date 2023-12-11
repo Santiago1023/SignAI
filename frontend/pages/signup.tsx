@@ -4,7 +4,8 @@ import React from 'react'
 import axios from 'axios'
 import Logo from "@/components/Logo";
 
-const signin = () => {
+const Signin = () => {
+// const signin = () => {
 
   const [credentials, setCredentials] = useState({ name: '', email: '', password: '' })
 
@@ -39,4 +40,5 @@ const signin = () => {
     </div>
   )
 }
-export default signin
+export default Signin
+// export default signin

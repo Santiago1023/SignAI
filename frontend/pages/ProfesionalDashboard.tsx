@@ -11,7 +11,10 @@ const ProfesionalDashboard = () => {
       <Layout>
         <div className='flex flex-col w-full h-full'>
             <div className='flex justify-center mt-11'>
-              <FilterSection/>
+              <FilterSection page={0} maxPages={0} setPage={function (page: number): void {
+              throw new Error('Function not implemented.')
+            } }/>
+              {/* <FilterSection/> */}
             </div>
             <DesktopCards/>
             <MobileCards/>

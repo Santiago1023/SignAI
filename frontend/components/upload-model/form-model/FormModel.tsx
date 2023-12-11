@@ -101,14 +101,17 @@ const FormModel = ({ file, setShowModal }: Props) => {
       tags={tags}
       inputs={inputsModelDescription}
       handleChange={handleChangeModelDescription}
+      key={`${tags}_`}
     />,
     <FormMetrics
       inputs={inputsModelMetrics}
       handleChange={handleChangeModelMetrics}
+      key={`${inputsModelMetrics}_`}
     />,
     <FormStateVersion
       inputs={inputsModelStateVersion}
       handleChange={handleChangeModelStateVersion}
+      key={`${inputsModelStateVersion}_`}
     />,
   ];
 

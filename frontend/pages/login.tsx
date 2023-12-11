@@ -9,6 +9,7 @@ import Contact from "@/components/contact/Contact";
 import ErrorMessage from "@/components/error-message/ErrorMessage";
 import jwt_decode from "jwt-decode";
 import { ROUTES_DASHBOARD } from "@/constants/routes";
+import Image from "next/image";
 
 const userData: Credentials = {
   user: "",
@@ -107,7 +108,8 @@ const Login = () => {
         </form>
       </section>
       <figure className={styles.LogoContainer}>
-        <img src="/udea-logo-blanco.svg" alt="logo udea" />
+        <Image src="/udea-logo-blanco.svg" alt="logo udea" />
+        {/* <img src="/udea-logo-blanco.svg" alt="logo udea" /> */}
       </figure>
     </main>
   );
